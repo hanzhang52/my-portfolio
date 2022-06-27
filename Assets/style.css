@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: rgb(0, 69, 91);
+  font-family: Arial;
+  margin: 0;
+}
+header {
+  padding: 30px;
+  text-align: left;
+  background: #13293d;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  background: url(backgroundcover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.port {
+  color: cornflowerblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: xx-large;
+}
+a {
+  cursor: pointer;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+h2,
+h3,
+h4 {
+  font-size: 16px;
+  color: whitesmoke;
+}
+p {
+  font-size: 16px;
+  padding: 10px;
+  color: cornflowerblue;
+  margin: 0%;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+}
+.one {
+  font-size: 16px;
+  padding: 10px;
+  color: cornflowerblue;
+  margin: 0%;
+  text-align: left;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+}
+.mainProject {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 4;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shrink img {
+  transition: 1s ease;
+}
+.shrink img:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
+
+.shrink {
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  flex: 0 0 300px;
+}
+nav {
+  background-color: gray;
+  padding: 19px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
+figure {
+  background: url(./bakgroundcover\(2\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: left;
+}
+main {
+  text-align: left;
+  padding: 30px;
+}
+img {
+  margin: 0;
+  display: block;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  left: 0;
+  top: 200px;
+  background-color: rgb(0, 69, 91);
+  padding: 15px;
+}
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+@media screen and (width: 2560px) {
+  .img > img {
+    width: 150%;
+    flex: 0 0 300px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 2500px) {
+  .shrink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .projects {
+    width: 100%;
+    flex: 0 0 300px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .port {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  a {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  main,
+  nav {
+    flex-direction: column;
+    padding: 8px;
+  }
+  .mainImg {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainImg {
+    width: 300px;
+    height: 150px;
+  }
+  .shrink {
+    padding: 0px;
+  }
+}
